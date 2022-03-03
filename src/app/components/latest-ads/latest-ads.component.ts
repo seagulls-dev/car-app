@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarService } from 'src/app/service/car.service';
 
 @Component({
   selector: 'app-latest-ads',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LatestAdsComponent implements OnInit {
 
-  constructor() { }
+  latestData = [];
+
+  constructor(private service: CarService) { }
 
   ngOnInit(): void {
+    this.service.getData().subscribe(res => 
+      {
+        this.latestData = res['latest_ads']
+      }
+    )
   }
 
 }

@@ -1,0 +1,9 @@
+<drag-scroll>
+    <div class="card" drag-scroll-item *ngFor="let item of latestData">
+      <img [src]="item['vehicle']['picture_url']" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item['year']}}</h5>
+        <p>{{item['vehicle']['model_name']}}</p>
+      </div>
+    </div>
+</drag-scroll>

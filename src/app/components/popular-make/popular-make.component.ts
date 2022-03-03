@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CarService } from 'src/app/service/car.service';
 
+
 @Component({
-  selector: 'app-body-type',
-  templateUrl: './body-type.component.html',
-  styleUrls: ['./body-type.component.scss']
+  selector: 'app-popular-make',
+  templateUrl: './popular-make.component.html',
+  styleUrls: ['./popular-make.component.scss']
 })
-export class BodyTypeComponent implements OnInit {
+export class PopularMakeComponent implements OnInit {
 
   latestData = [];
 
@@ -15,7 +16,7 @@ export class BodyTypeComponent implements OnInit {
   ngOnInit(): void {
     this.service.getData().subscribe(res => 
       {
-        this.latestData = res['body_types']
+        this.latestData = res['popular_makes']
       }
     )
   }

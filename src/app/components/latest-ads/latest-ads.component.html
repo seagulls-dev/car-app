@@ -1,1 +1,10 @@
-<p>latest-ads works!</p>
+<drag-scroll>
+    <div class="card" drag-scroll-item *ngFor="let item of latestData">
+      <img src="item['car']['vehicle']['body_type']['picture_link']" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item['car']['mileage']}}</h5>
+        <p class="card-text">{{item['car']['price']}}</p>
+        <p>{{item['car']['vehicle']['model_name']}}</p>
+      </div>
+    </div>
+</drag-scroll>

@@ -12,10 +12,15 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-import { NguCarouselModule } from '@ngu/carousel';
 import { BrandComponent } from './components/brand/brand.component';
 import { LatestAdsComponent } from './components/latest-ads/latest-ads.component';
 import { BodyTypeComponent } from './components/body-type/body-type.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { DragScrollModule } from 'ngx-drag-scroll';
+import { CommonGalleryComponent } from './components/common-gallery/common-gallery.component';
+import { PopularRegionComponent } from './components/popular-region/popular-region.component';
+import { PopularMakeComponent } from './components/popular-make/popular-make.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +34,16 @@ import { BodyTypeComponent } from './components/body-type/body-type.component';
     FooterComponent,
     BrandComponent,
     LatestAdsComponent,
-    BodyTypeComponent
+    BodyTypeComponent,
+    CommonGalleryComponent,
+    PopularRegionComponent,
+    PopularMakeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NguCarouselModule
+    DragScrollModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+<h1>
+    Popular Makes
+</h1>
+
+<drag-scroll>
+    <div class="card" drag-scroll-item *ngFor="let item of latestData">
+      <img [src]="item['logo_url']" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item['name']}}</h5>
+      </div>
+    </div>
+</drag-scroll>
