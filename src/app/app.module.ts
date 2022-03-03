@@ -8,6 +8,8 @@ import { SellCarComponent } from './pages/sell-car/sell-car.component';
 import { BuyCarComponent } from './pages/buy-car/buy-car.component';
 import { MarketComponent } from './pages/market/market.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     SellCarComponent,
     BuyCarComponent,
     MarketComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
