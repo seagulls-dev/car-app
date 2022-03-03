@@ -13,6 +13,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
+import { BrandComponent } from './components/brand/brand.component';
+import { LatestAdsComponent } from './components/latest-ads/latest-ads.component';
+import { BodyTypeComponent } from './components/body-type/body-type.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { NguCarouselModule } from '@ngu/carousel';
     MarketComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BrandComponent,
+    LatestAdsComponent,
+    BodyTypeComponent
   ],
   imports: [
     BrowserModule,
